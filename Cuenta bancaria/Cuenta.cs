@@ -41,9 +41,9 @@ public class CuentaCorrientePesos : Cuenta {
     }
 
     public override void mostrarInformacionCuenta(){
-        this.mostrarInformacionCuenta();
+        base.mostrarInformacionCuenta();
         Console.WriteLine($" -> CUENTA CORRIENTE EN ARS");
-        Console.WriteLine($" -> Monto: {this.getMontoCuenta} ARS");
+        Console.WriteLine($" -> Monto: {this.getMontoCuenta()} ARS");
     }
 
     public CuentaCorrientePesos(double montoCuenta, string nombreTitular, string DNITitular) : base(montoCuenta,nombreTitular,DNITitular){
@@ -71,9 +71,9 @@ public class CuentaDolares : Cuenta {
     }
 
     public override void mostrarInformacionCuenta(){
-        this.mostrarInformacionCuenta();
+        base.mostrarInformacionCuenta();
         Console.WriteLine($" -> CUENTA CORRIENTE EN USD");
-        Console.WriteLine($" -> Monto: {this.getMontoCuenta} USD");
+        Console.WriteLine($" -> Monto: {this.getMontoCuenta()} USD");
     }
     
     public CuentaDolares(double montoCuenta, string nombreTitular, string DNITitular) : base(montoCuenta,nombreTitular,DNITitular){
@@ -98,9 +98,9 @@ public class CajaAhorroPesos : Cuenta {
     }
 
     public override void mostrarInformacionCuenta(){
-        this.mostrarInformacionCuenta();
+        base.mostrarInformacionCuenta();
         Console.WriteLine($" -> CAJA DE AHORRO EN PESOS");
-        Console.WriteLine($" -> Monto: {this.getMontoCuenta} ARS");
+        Console.WriteLine($" -> Monto: {this.getMontoCuenta()} ARS");
     }
 
     public CajaAhorroPesos(double montoCuenta, string nombreTitular, string DNITitular) : base(montoCuenta,nombreTitular,DNITitular){
